@@ -1,0 +1,39 @@
+//#Program
+
+import java.util.*;
+
+class PrimeNumber{
+   public static void main(String args[]){
+    Scanner s = new Scanner (System.in);
+    System.out.print("Enter a Value :");
+    
+     int a = s.nextInt();
+     boolean isPrime = true ;
+     
+     for (int i=2 ; i<a; i++){
+       if (a%i ==0){
+         isPrime = false ;
+         
+       }
+     }
+    if (isPrime){
+     System.out.println(a+" is a Prime Number");
+     }
+     else {
+       System.out.println(a+" is not a Prime Number");
+        }
+   }
+ }
+
+/* #Output
+
+Enter a Value :25
+25 is not a Prime Number
+
+Enter a Value :2
+2 is a Prime Number
+
+Enter a Value :99
+99 is not a Prime Number
+
+*/
